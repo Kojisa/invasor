@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/jugador/jugador.gd" type="Script" id=1]
+
+[node name="Node2D" type="KinematicBody2D"]
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+motion/sync_to_physics = false
+script = ExtResource( 1 )
+maxX = 600
+maxY = 600
+acel = 1400
+freno = 800
+maxVel = 500
+vidas = 3
+hp = 1
+gravedad = Vector2( 0, 100 )
+deltaFreno = 1
+
+[node name="PosArma" type="Position2D" parent="."]
+position = Vector2( 40.4843, 0 )
+
+[node name="Colision" type="CollisionPolygon2D" parent="."]
+build_mode = 0
+polygon = PoolVector2Array( 0, -30, 40, 0, 0, 30 )
+
+[node name="Sprite" type="Polygon2D" parent="."]
+polygon = PoolVector2Array( 0, -30, 40, 0, 0, 30 )
+uv = PoolVector2Array(  )
+splits = PoolIntArray(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+skeleton = NodePath("")
+invert_enable = false
+invert_border = 100.0
+bones = [  ]
+

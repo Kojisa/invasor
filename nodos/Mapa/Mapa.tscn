@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/Mapa/Mapa.gd" type="Script" id=1]
+
+[node name="Mapa" type="Node2D"]
+script = ExtResource( 1 )
+maxX = 600
+maxY = 600
+acel = 1400
+freno = 800
+maxVel = 500
+gravedad = Vector2( 0, 100 )
+deltaFreno = 1
+
+[node name="Pilar" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Pilar"]
+position = Vector2( -304.995, 588.442 )
+polygon = PoolVector2Array( 0, 0, 0, -100, 20, -100, 20, 0 )
+uv = PoolVector2Array(  )
+splits = PoolIntArray(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+skeleton = NodePath("")
+invert_enable = false
+invert_border = 100.0
+bones = [  ]
+
